@@ -1,10 +1,6 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
@@ -17,16 +13,23 @@
   color: #2c3e50;
 }
 
-nav {
-  padding: 30px;
+.ToDoTable {
+  border: solid 1px black;
+  min-height: 200px;
+  margin-top: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
 }
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
+.tableHeader {
+  border-bottom: solid 1px black;
 }
-
-nav a.router-link-exact-active {
-  color: #42b983;
+i {
+  font-size: 26px;
+  cursor: pointer;
+  padding-right: 20px;
+}
+.tableRow {
+  margin-top: 10px;
+  border: solid 1px black;
 }
 </style>
